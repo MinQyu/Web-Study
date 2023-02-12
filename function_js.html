@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 function</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <div class="alert-box" id="alert">
+            <p>Alert 박스</p>
+            <button onclick="close_alert();">닫기</button>
+        </div>
+        <button onclick="open_alert()">열기</button>
+    <script>
+        function open_alert(){
+            document.getElementById('alert').style.display = 'block';
+        }
+        function close_alert(){
+            document.getElementById('alert').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
