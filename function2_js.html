@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 function(파라미터), 이벤트 리스너</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <div class="alert-box" id="alert">
+            <p id="title">Alert 박스</p>
+            <button id="close"> X </button>
+        </div>
+
+        <button onclick="open_button('아이디 입력')">버튼1</button>
+        <button onclick="open_button('비밀번호 입력')">버튼2</button>
+
+    <script>
+        function alert_display(blank){
+            document.getElementById('alert').style.display = blank;
+        }
+
+        function change_html(str){
+            document.getElementById('title').innerHTML = str;
+        }
+        function open_button(string){
+            change_html(string);
+            alert_display('block');
+        }
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
