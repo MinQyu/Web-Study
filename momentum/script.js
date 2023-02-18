@@ -1,17 +1,14 @@
-const a = 5;
-let b = 2;
+const mon ="mon";
+const tue ="tue";
+const wed ="wed";
+const thu ="thu";
+const fri ="fri";
+const sat ="sat";
 
-let myName = "Min-gyu";
 
-console.log("hello " + myName);
-console.log(a+b);
-console.log(a*b);
-console.log(a/b);
+const daysOfWeek = [mon, tue, wed, thu, fri, sat];
+console.log(daysOfWeek);
+console.log(daysOfWeek[5]);
 
-myName = "Kim";
-console.log("your new name is "+myName);
-
-const amIFat = null;
-let something;
-console.log(amIFat);
-console.log(something);
+daysOfWeek.push("sun");
+console.log(daysOfWeek);
