@@ -1,14 +1,11 @@
-const mon ="mon";
-const tue ="tue";
-const wed ="wed";
-const thu ="thu";
-const fri ="fri";
-const sat ="sat";
-
-
-const daysOfWeek = [mon, tue, wed, thu, fri, sat];
-console.log(daysOfWeek);
-console.log(daysOfWeek[5]);
-
-daysOfWeek.push("sun");
-console.log(daysOfWeek);
+const player = {
+    name: "gyu",
+    points: 10,
+    fat: false,
+};
+player.lastName = "Kim";
+console.log(player);
+console.log(player.name);
+player.fat =true;
+player.points += 15;
+console.log(player);
