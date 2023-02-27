@@ -11,20 +11,31 @@ plus(5, 10);
 
 const calculator = {
     add: function(a,b){
-        console.log(a+b);
+        return(a+b);
     },
     minus: function(a,b){
-        console.log(a-b);
+        return(a-b);
+    },
+    times: function(a,b){
+        return(a*b);
     },
     divide: function(a,b){
-        console.log(a/b);
+        return(a/b);
     },
     square: function(a,b){
-        console.log(a**b);
+        return(a**b);
     },
 };
+const age = 25;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;
+}
 
-calculator.add(1,5);
-calculator.minus(10,5);
-calculator.divide(6,2);
-calculator.square(2,3);
+const krAge = calculateKrAge(age);
+console.log(krAge);
+
+const result = calculator.add(5,6);
+const result2 = calculator.times(result, 2);
+
+console.log(result);
+console.log(result2);
